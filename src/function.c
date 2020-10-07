@@ -1,51 +1,135 @@
 #include<function.h>
 
-void fibonacci_func(int fibonacci_limit)
-{
-    int init_term=0, second_term=1, nextTerm, fibonacci_iterator;
-    printf("Fibonacci Series: ");
+int add(int input1,int input2)
 
-    for (fibonacci_iterator = 1; fibonacci_iterator <= fibonacci_limit; ++fibonacci_iterator) {
-        printf("%d, ", init_term);
-        nextTerm = init_term + second_term;
-        init_term = second_term;
-        second_term = nextTerm;
-    }
+{
+
+    int result = input1+input2;
+
+    return result;
+
 }
 
-int factorial_func(int factorial_input)
+ 
+
+int subtract(int input1,int input2)
+
 {
-    int factorial_value=1,factorial_iterator;
-    if (factorial_input < 0)
+
+    int result = input1-input2;
+
+    return result;
+
+}
+
+ 
+
+ 
+
+int multiply(int input1,int input2)
+
+{
+
+    int result = input1*input2;
+
+    return result;
+
+}
+
+ 
+
+int divide(int input1,int input2)
+
+{
+
+    int result = input1/input2;
+
+    return result;
+
+}
+
+ 
+
+double squareroot(double triginput)
+
+{
+
+    double result = sqrt(triginput);
+
+    return result;
+
+}
+
+ 
+
+int modulus(int input1,int input2)
+
+{
+
+    int result = input1 % input2;
+
+    return result;
+
+}
+
+ 
+
+int fact(int input1)
+
+{
+
+    int i,fact =1;
+
+    if (input1 < 0)
+
         printf("Error! Factorial of a negative number doesn't exist.");
+
     else {
-        for (factorial_iterator = 1; factorial_iterator <= factorial_input; ++factorial_iterator) {
-            factorial_value *= factorial_iterator;
+
+        for (i = 1; i <= input1; ++i) {
+
+            fact *= i;
+
         }
+
+        return fact;
+
     }
-    return factorial_value;
+
 }
 
-int prime_func(int prime_input)
+ 
+
+double cosine(double triginput)
+
 {
-    int prime_iterator,flag=0;
-    for (prime_iterator = 2; prime_iterator <= prime_input / 2; ++prime_iterator) {
 
-        // condition for non-prime
-        if (prime_input % prime_iterator == 0) {
-            flag = 1;
-            break;
-        }
-    }
+    double result = cos(triginput);
 
-    if (prime_input == 1) {
-        printf("1 is neither prime nor composite.");
-    }
-    else {
-        if (flag == 0)
-            return 1;
-        else
-            return 0;
-    }
+    return result;
+
+    
+
+}
+
+double sine(double triginput)
+
+{
+
+    double result = sin(triginput);
+
+    return result;
+
+    
+
+}
+
+int power(int input1,int input2)
+
+{
+
+    int result = pow(input1,input2);
+
+    return result;
 
 }
