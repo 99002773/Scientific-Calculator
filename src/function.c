@@ -72,46 +72,6 @@ int modulus(int input1,int input2)
 
 }
 
- 
-
-int fact(int input1)
-
-{
-
-    int i,fact =1;
-
-    if (input1 < 0)
-
-        printf("Error! Factorial of a negative number doesn't exist.");
-
-    else {
-
-        for (i = 1; i <= input1; ++i) {
-
-            fact *= i;
-
-        }
-
-        return fact;
-
-    }
-
-}
-
- 
-
-double cosine(double triginput)
-
-{
-
-    double result = cos(triginput);
-
-    return result;
-
-    
-
-}
-
 double sine(double triginput)
 
 {
